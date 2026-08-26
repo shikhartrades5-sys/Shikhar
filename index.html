@@ -1,1 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Shikhar Trades & Enterprises | Hosiery & Garments</title>
+
+  <meta
+    name="description"
+    content="Shikhar Trades & Enterprises - Hosiery and Garments Items in Tulsipur, Dang."
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f8fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #173b8f;
+    }
+
+    .logo span {
+      color: #e63946;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #172033;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #173b8f;
+    }
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 70px 7%;
+      background: linear-gradient(135deg, #eef4ff, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dfe9ff;
+      color: #173b8f;
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #173b8f;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #596273;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .primary {
+      background: #173b8f;
+      color: white;
+    }
+
+    .primary:hover {
+      background: #102d70;
+      transform: translateY(-2px);
+    }
+
+    .secondary {
+      background: white;
+      color: #173b8f;
+      border: 2px solid #173b8f;
+    }
+
+    .secondary:hover {
+      background: #eef4ff;
+    }
+
+    section {
+      padding: 80px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #667085;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #667085;
+    }
+
+    .about {
+      background: #ffffff;
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-box p {
+      font-size: 18px;
+      color: #596273;
+    }
+
+    .contact {
+      background: #eef4ff;
+    }
+
+    .contact-box {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    }
+
+    .contact-item {
+      margin: 18px 0;
+      font-size: 18px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: #173b8f;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      background: #101828;
+      color: white;
+      text-align: center;
+      padding: 30px 7%;
+    }
+
+    footer p {
+      color: #b8c0cc;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 15px 5%;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 60px 5%;
+      }
+
+      section {
+        padding: 60px 5%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">
+      Shikhar<span>.</span>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <div class="badge">
+        Tulsipur, Dang • Nepal
+      </div>
+
+      <h1>
+        Shikhar Trades
+        <span>& Enterprises</span>
+      </h1>
+
+      <p>
+        Quality Hosiery and Garments Items for your business and everyday needs.
+        We are based in Tulsipur, Dang.
+      </p>
+
+      <div class="buttons">
+        <a href="#products" class="btn primary">
+          Explore Products
+        </a>
+
+        <a href="tel:9763251402" class="btn secondary">
+          Call Us
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Products -->
+  <section id="products">
+
+    <div class="section-title">
+      <h2>Our Products</h2>
+      <p>Quality products from Shikhar Trades & Enterprises</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🧦</div>
+        <h3>Hosiery Items</h3>
+        <p>
+          A range of hosiery products suitable for different customer and
+          business needs.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">👕</div>
+        <h3>Garments Items</h3>
+        <p>
+          Garments and clothing items with a focus on quality and value.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section class="about" id="about">
+
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+
+    <div class="about-box">
+      <p>
+        <strong>Shikhar Trades & Enterprises</strong> is a business based in
+        Tulsipur, Dang, Nepal, dealing in Hosiery and Garments Items.
+        We aim to provide quality products and reliable service to our customers.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>Get in touch with Shikhar Trades & Enterprises</p>
+    </div>
+
+    <div class="contact-box">
+
+      <div class="contact-item">
+        <strong>📍 Location</strong>
+        Tulsipur, Dang, Nepal
+      </div>
+
+      <div class="contact-item">
+        <strong>📞 Phone</strong>
+        <a href="tel:9763251402">
+          9763251402
+        </a>
+      </div>
+
+      <div class="buttons" style="justify-content:center; margin-top:25px;">
+        <a href="tel:9763251402" class="btn primary">
+          Call Now
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <h3>Shikhar Trades & Enterprises</h3>
+    <p>Hosiery & Garments Items • Tulsipur, Dang</p>
+    <p>© 2026 Shikhar Trades & Enterprises. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
