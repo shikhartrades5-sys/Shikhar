@@ -1,0 +1,10 @@
+{
+  "name": "Shikhar Trades & Enterprises",
+  "short_name": "Shikhar",
+  "description": "Shikhar Trades & Enterprises - Hosiery and Garments Items",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#17449b",
+  "orientation": "portrait"
+}
